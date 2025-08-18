@@ -25029,7 +25029,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   excalidraw${1:+_$1}:
-    image: excalidraw/excalidraw:latest
+    image: etolbakov/excalidocker:latest
 
     volumes:
       - excalidraw${1:+_$1}_data:/data
@@ -25095,7 +25095,7 @@ echo ""
 sleep 1
 
 ## Baixando imagens:
-pull excalidraw/excalidraw:latest
+pull etolbakov/excalidocker:latest
 
 ## Usa o serviço wait_stack "excalidraw" para verificar se o serviço esta online
 wait_stack excalidraw${1:+_$1}_excalidraw${1:+_$1}
